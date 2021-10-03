@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .message-container {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+.container .message-container header {
+  height: 70px;
+  border-bottom: 1px solid black;
+}
+
+.container .message-container header .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.container .message-container header .user .avatar {
+  border-radius: 50%;
+  background-color: gray;
+  height: 40px;
+  width: 40px;
+  margin-left: 8px;
+}
+
+.container .message-container header .user .name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 8px;
+  text-align: center;
+}
+
+.container .message-container .message-body {
+  height: calc(100% - 130px);
+  width: 100%;
+  overflow-y: scroll;
+  padding: 10px;
+  background-color: white;
+}
+
+.container .message-container .message-body .messages {
+  min-height: 10px;
+  padding: 10px;
+  background: blue;
+  color: white;
+  margin-bottom: 3px;
+  border-radius: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  max-width: 50%;
+  overflow-wrap: break-word;
+}
+
+.container .message-container .message-body .messages.received {
+  margin-left: 5px;
+  background: gray;
+  color: white;
+}
+
+.container .message-container .message-input {
+  height: 60px;
+  width: 100%;
+  border-top: 1px solid lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: -1px -2px 8px rgba(122, 122, 122, 0.4);
+          box-shadow: -1px -2px 8px rgba(122, 122, 122, 0.4);
+}
+
+.container .message-container .message-input input[type=text] {
+  width: 70%;
+  height: 100%;
+  font-size: 1.4rem;
+  padding-left: 10px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.container .message-container .message-input input[type=submit] {
+  width: 12%;
+  height: 100%;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: #2727f7;
+  cursor: pointer;
+  margin-left: 5px;
+}
+/*# sourceMappingURL=style.css.map */

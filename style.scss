@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .message-container {
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+
+        header {
+            height: 70px;
+            border-bottom: 1px solid black;
+
+            .user {
+                display: flex;
+                width: 50%;
+                height: 100%;
+                align-items: center;
+                cursor: pointer;
+                
+                .avatar {
+                    border-radius: 50%;
+                    background-color: gray;
+                    height: 40px;
+                    width: 40px;
+                    margin-left: 8px;
+
+                }
+                .name {
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    margin-left: 8px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .message-body {
+            height: calc(100% - 130px);
+            width: 100%;
+            overflow-y: scroll;
+            padding: 10px;
+            background-color: white;
+
+            .messages {
+                min-height:10px;
+                padding: 10px;
+                background: blue;
+                color: white;
+                margin-bottom: 3px;
+                border-radius: 10px;
+                width: fit-content;
+                margin-left: auto;
+                max-width: 50%;
+                overflow-wrap: break-word;
+            }
+
+            .messages.received {
+                margin-left: 5px;
+                background: gray;
+                color: white;
+            
+            }
+        }
+
+        .message-input {
+            height: 60px;
+            width: 100%;
+            border-top: 1px solid lightgray;
+            display: flex;
+            align-items: center;
+            padding: 6px;
+            justify-content: center;
+            box-shadow: -1px -2px 8px rgba(122,122,122,0.4);
+            
+            input[type=text] {
+                width: 70%;
+                height: 100%;
+                font-size: 1.4rem;
+                padding-left: 10px;
+                outline: none;
+                border: 1px solid black;
+                border-radius: 8px;
+
+                
+            }
+            input[type=submit] {
+                width: 12%;
+                height: 100%;
+                color: white;
+                font-size: 1.4rem;
+                font-weight: bold;
+                background-color: rgb(39, 39, 247);
+                cursor: pointer;
+                margin-left: 5px;
+            }
+        }
+    }
+
+}
